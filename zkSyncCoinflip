@@ -1,0 +1,51 @@
+Certainly! Here are five random Python code snippets:
+
+1. Generate a random password:
+
+```python
+import random
+import string
+
+def generate_password(length=12):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(characters) for _ in range(length))
+    return password
+
+print("Random Password:", generate_password())
+```
+
+2. Shuffle a list of numbers:
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+random.shuffle(numbers)
+print("Shuffled Numbers:", numbers)
+```
+
+3. Roll a six-sided die:
+
+```python
+def roll_die():
+    return random.randint(1, 6)
+
+print("Rolling a Die:", roll_die())
+```
+
+4. Randomly select an item from a list:
+
+```python
+fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+random_fruit = random.choice(fruits)
+print("Random Fruit:", random_fruit)
+```
+
+5. Simulate a coin flip:
+
+```python
+def flip_coin():
+    return random.choice(["Heads", "Tails"])
+
+print("Coin Flip Result:", flip_coin())
+```
+
+Feel free to use or modify these code snippets as needed!
